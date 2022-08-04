@@ -9,30 +9,94 @@
     </head>
     <body>
        <div class="container">
-        <header class="row clearfix">
-            Logomarca
-        </header>
-
+        <header>
+            <img src="../bootstrap/img/logomarca.png" alt="logomarca" width="200" height="150"/>
+          </header>
         <nav class="row clearfix">
-            Menu
+           <ul>
+              <li>
+                  <a href="paginainicial.html">Início</a>
+              </li>
+              <li>
+                <a href="paginalista.html">Lista</a>
+              </li>
+              <li>
+                <a href="paginaprodutos.html">Produtos</a>
+            </li>
+           </ul>
         </nav>
-       <div class="row clearfix"> 
-        <section class="col-md-6">
-            Região de foto do perfil
-        </section>
-
-        <section class="col-md-6">
-            Região de dados cadastrais e criação/ exclusão de lista
-        </section>
        </div>
+       <hr>
+       <h2>
+        <strong>Meu perfil</strong>
+       </h2>
+       <hr>
+       <section class="col-md-6">
+        <h4> Imagem de perfil</h4>
+        <img src="../bootstrap/img/usuario/padrao.jpg" alt="">
+        <hr />
+        <form method="post" enctype="multipart/form-data">
+            <p><input type="file" name="arquivo"/></p>
+            <p><button name="enviarFoto" type="submit">Enviar</button></p>
+        </form>
+       </section>
+       <section class="col-md-6">
+        <h4>Dados de perfil</h4>
+        <p>Nome: Usuário</p>
+        <p>Email: usuario@gmail.com</p>
+        <p><a href="#">Meu link</a></p>
+        <p>Data de criação: 12/12/2012</p>
+        <br />
 
-       <div class="row clearfix">
+        <div>
+            <h3>Minha Lista</h3>
+
+            <p>Nome: Lista de aniversário</p>
+            <form method="post">
+                <input type="text" name="descrição" placeholder="Coloque aqui o nome de sua lista" required />
+                <button name="criarLista" type="submit">Criar lista</button>
+            </form>
+        </div>
+        </section>
+        <hr>
+        <div>
+            <h2>
+              <strong>Serviços para sua lista</strong>
+            </h2>
+            <hr>
+        </div>
         <section class="col-md-6">
-            Região de produtos da lista
+            <h3 >Itens da minha lista</h3>
+            <table >
+                <thead>
+                    <tr>
+                        <th>Códico</th>
+                        <th>Descrição</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6</td>
+                        <td>Computador</td>
+                        <td>
+                            <form method="post">
+                                <input type="hidden" name="codProduto" value="6">
+                                <button name="excluirItem" type="submit">Excluir</button>
+                            </form></td>
+
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section class="col-md-6">
-            Região de indicação para amigos
+            <h3>Indicar para um amigo</h3>
+                <form method="post">
+                    <input type="hidden" name="link" value="" />
+                    <p><input type="text" name="nome" placeholder="Nome" required></p>
+                    <p><input type="email" name="email" placeholder="Email" required></p>
+                    <p><button type="submit">Indicar</button></p>
+                </form>
         </section>
-       </div>
     </body>
 </html>
