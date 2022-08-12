@@ -6,70 +6,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página de inicial</title>
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap/css/estilo.css" ref="stylesheet">
     </head>
     <body>
       <div class="container">
           <header>
             <img src="../bootstrap/img/logomarca.png" alt="logomarca" width="200" height="150"/>
           </header>
-        <nav class="row clearfix">
-            <ul>
-               <li>
-                   <a href="home.html">Início</a>
+        <nav class="row clearfix caixa">
+            <ul  class="nav nav-pills nav-fill menu-estilo">
+               <li class="nav-item">
+                   <a class="nav-link"  href="home.html">Início</a>
                </li>
-               <li>
-                 <a href="paginalista.html">Lista</a>
+               <li class="nav-item">
+                 <a class="nav-link"  href="paginalista.html">Lista</a>
                </li>
-               <li>
-                 <a href="paginaprodutos.html">Produtos</a>
+               <li class="nav-item">
+                 <a class="nav-link"  href="paginaprodutos.html">Produtos</a>
              </li>
             </ul>
          </nav>
     </div> 
-        <section class="col-md-6">
-            <form  method="POST">
+        
+            <form  method="POST" class="form-estilo">
                 <hr>
-                <h2>
+                <h2 class="titulo">
                     <strong>Efetue o login</strong>
                 </h2>
                 <hr>
-                <p><input type="email" name="email" placeholder="Digite seu email" required/></p>
-                <p><input type="password" name="senha" placeholder="Digite sua senha" required/></p>
+                <p><input type="email" name="email" class="form-control" placeholder="Digite seu email" required/></p>
+                <p><input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required/></p>
                 <label class="checkbox">
                     <input type="checkbox" name="lembrete" > Lembrar senha
                 </label>
-                <p><button name="login" type="submit">Entrar</button></p>
+                <p><button name="login" type="submit" class="btn btn-lg btn-block">Entrar</button></p>
             </form>
-        </section>
-        <section class="col-md-6">
-            <form method="POST">
+       
+            <form method="POST" class="form-estilo">
                 <hr>
-                <h2>
+                <h2 class="titulo">
                     <strong>Cadastre-se agora</strong>
                 </h2>
                 <hr>
-                <p><input type="email" name="email" placeholder="Digite seu email" required/></p>
-                <p><input type="password" name="senha" placeholder="Digite sua senha" required/></p>
-                <p><button name="login" type="submit">Entrar</button></p>
+                <p><input type="email" name="email" class="form-control" placeholder="Digite seu email" required/></p>
+                <p><input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required/></p>
+                <p><button name="login" type="submit" class="btn btn-lg btn-block">Cadastrar</button></p>
             </form>
-        </section>
-        <section class="row clearfix">
+       
+        <section class="row clearfix caixa">
             <hr>
-            <h2><strong>Como criar sua própria lista?</strong>
+            <h2 class="titulo">
+                <strong>Como criar sua própria lista?</strong>
             </h2>
             <hr>
 
-            <div>
-                <div>
-                    <img alt="tutorial_1" src="../bootstrap/img/index/tutorial_1.jpg" width="400" height="200">
-                </div>
-                <div>
-                    <p>
-                        Texto explicativo
-                    </p>
-                </div>
+            <div class="col-md-6">
+                <img class="img-responsive" alt="tutorial_1" 
+                     src="../bootstrap/img/index/tutorial_1.jpg" width="400" height="200">
             </div>
-            <hr>
+            <div class="col-md-6">
+                <p>
+                     Texto explicativo
+                </p>
+            </div>
         </section>
     </body>
 </html>

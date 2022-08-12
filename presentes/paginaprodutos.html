@@ -6,41 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página de produtos</title>
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap/css/estilo.css" ref="stylesheet">
     </head>
     <body>
       <div class="container">
         <header>
           <img src="../bootstrap/img/logomarca.png" alt="logomarca" width="200" height="150"/>
         </header>
-        <nav class="row clearfix">
-            <ul>
-               <li>
-                   <a href="paginainicial.html">Início</a>
+        <nav class="row clearfix caixa">
+            <ul  class="nav nav-pills nav-fill menu-estilo">
+               <li class="nav-item">
+                   <a class="nav-link"  href="paginainicial.html">Início</a>
                </li>
-               <li>
-                 <a href="paginalista.html">Lista</a>
+               <li class="nav-item">
+                 <a class="nav-link"  href="paginalista.html">Lista</a>
                </li>
-               <li>
-                 <a href="paginaprodutos.html">Produtos</a>
+               <li class="nav-item">
+                 <a class="nav-link"  href="paginaprodutos.html">Produtos</a>
              </li>
             </ul>
          </nav>
       </div>
       <div>
-        <hr>
-        <h2>
-          <strong>Produtos para sua lista</strong>
-        </h2>
-        <hr>
+          <hr>
+          <h2 class="titulo">
+            <strong>Produtos para sua lista</strong>
+          </h2>
+          <hr>
+        <section class="row clearflix caixa centralizado">
+          <img class="img-responsive center-block" 
+               src="../bootstrap/img/pruduto/pc.jpg" alt="foto" />
+          <h2>Título do produto</h2>
+          <p>Descrição do produto</p>
+          <p><a href="#" >Link do produto</a></p>
+        </section>
       </div>
-
-      <article>
-        <img src="../bootstrap/img/pruduto/pc.jpg" alt="foto" />
-        <h2>Título do produto</h2>
-        <p>Descrição do produto</p>
-        <p><a href="#" >Link do produto</a></p>
-
-      </article>
     </body>
 </html>
 
